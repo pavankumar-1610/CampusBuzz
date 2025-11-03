@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CampusBuzz — Blogs</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <a href="index.html" class="brand">
+        <img src="assets/cb.jpeg" alt="CampusBuzz logo" class="logo" />
+        <span class="brand-text">CampusBuzz</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="blogs.html" class="active">Blogs</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile sidebar + backdrop (used on small screens) -->
+  <div id="sidebarBackdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+  <aside id="mobileSidebar" class="mobile-sidebar" aria-hidden="true">
+    <div class="sidebar-inner">
+      <button class="sidebar-close" aria-label="Close navigation">×</button>
+      <nav aria-label="Mobile navigation">
+        <ul class="sidebar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <main class="container">
+    <section class="section fade-in">
+      <h1>Blogs</h1>
+      <p class="lead">Latest thought pieces and campus updates.</p>
+
+      <div class="blog-grid">
+        <!-- Blog card 1 -->
+        <article class="blog-card">
+          <h3>Orientation Week: Top 5 Tips</h3>
+          <time datetime="2025-09-01">Sep 1, 2025</time>
+          <p>Short intro to orientation tips for new students...</p>
+          <button class="btn-small readmore" data-title="Orientation Week: Top 5 Tips" data-date="Sep 1, 2025" data-content="Complete article content goes here...">Read More</button>
+        </article>
+
+        <!-- Blog card 2 -->
+        <article class="blog-card">
+          <h3>How to Build Your Campus Portfolio</h3>
+          <time datetime="2025-08-15">Aug 15, 2025</time>
+          <p>Strategies to present your campus work effectively...</p>
+          <button class="btn-small readmore" data-title="How to Build Your Campus Portfolio" data-date="Aug 15, 2025" data-content="Complete article content goes here...">Read More</button>
+        </article>
+
+        <!-- Blog card 3 -->
+        <article class="blog-card">
+          <h3>Managing Student Events Efficiently</h3>
+          <time datetime="2025-07-20">Jul 20, 2025</time>
+          <p>Checklist and timeline for a flawless event...</p>
+          <button class="btn-small readmore" data-title="Managing Student Events Efficiently" data-date="Jul 20, 2025" data-content="Complete article content goes here...">Read More</button>
+        </article>
+
+        <!-- Blog card 4 -->
+        <article class="blog-card">
+          <h3>Networking: Campus Edition</h3>
+          <time datetime="2025-06-05">Jun 5, 2025</time>
+          <p>How to network with alumni and industry from campus events...</p>
+          <button class="btn-small readmore" data-title="Networking: Campus Edition" data-date="Jun 5, 2025" data-content="Complete article content goes here...">Read More</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for blog expand -->
+  <div id="blogModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3 id="modalTitle"></h3>
+      <time id="modalDate"></time>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>CampusBuzz</h4>
+        <p>©️ CampusBuzz 2025. Built with ❤️ using HTML, CSS, JS.</p>
+      </div>
+      <nav aria-label="Quick links">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:hello@campusbuzz.site">hello@campusbuzz.site</a></p>
+        <div class="social">
+          <a href="#" aria-label="Twitter">T</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

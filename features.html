@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CampusBuzz — Features</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <a href="index.html" class="brand">
+        <img src="assets/cb.jpeg" alt="CampusBuzz logo" class="logo" />
+        <span class="brand-text">CampusBuzz</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html" class="active">Features</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile sidebar + backdrop (used on small screens) -->
+  <div id="sidebarBackdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+  <aside id="mobileSidebar" class="mobile-sidebar" aria-hidden="true">
+    <div class="sidebar-inner">
+      <button class="sidebar-close" aria-label="Close navigation">×</button>
+      <nav aria-label="Mobile navigation">
+        <ul class="sidebar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <main class="container">
+    <section class="section fade-in">
+      <h1>Features</h1>
+      <p class="lead">Tools built specifically for campus communities.</p>
+
+      <div class="feature-grid large">
+        <article class="card">
+          <h3>Campus News</h3>
+          <p>Curated updates for your campus — departments, clubs, sports and announcements.</p>
+        </article>
+
+        <article class="card">
+          <h3>Event Management</h3>
+          <p>Create events, manage RSVPs, and send reminders.</p>
+        </article>
+
+        <article class="card">
+          <h3>Blogs & Announcements</h3>
+          <p>Publish long-form posts, updates and comment threads.</p>
+        </article>
+
+        <article class="card">
+          <h3>Student Communities</h3>
+          <p>Create groups for clubs, departments, study groups and interests.</p>
+        </article>
+
+        <article class="card">
+          <h3>Internship & Job Opportunities</h3>
+          <p>Internship board with filters, deadlines and application links.</p>
+        </article>
+
+        <article class="card">
+          <h3>Chat / Collaboration Tools</h3>
+          <p>Direct messaging and group chat for students and teams.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>CampusBuzz</h4>
+        <p>©️ CampusBuzz 2025. Built with ❤️ using HTML, CSS, JS.</p>
+      </div>
+      <nav aria-label="Quick links">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:hello@campusbuzz.site">hello@campusbuzz.site</a></p>
+        <div class="social">
+          <a href="#" aria-label="Twitter">T</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CampusBuzz — Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <a href="index.html" class="brand">
+        <img src="assets/cb.jpeg" alt="CampusBuzz logo" class="logo" />
+        <span class="brand-text">CampusBuzz</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mobile sidebar + backdrop (used on small screens) -->
+  <div id="sidebarBackdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+  <aside id="mobileSidebar" class="mobile-sidebar" aria-hidden="true">
+    <div class="sidebar-inner">
+      <button class="sidebar-close" aria-label="Close navigation">×</button>
+      <nav aria-label="Mobile navigation">
+        <ul class="sidebar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <main class="container">
+    <section class="section fade-in">
+      <h1>Contact Us</h1>
+      <p class="lead">Have questions or want to collaborate? Drop us a message.</p>
+
+      <div class="contact-grid">
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us about your question or idea" required></textarea>
+
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <!-- mailto fallback -->
+            <a href="mailto:hello@campusbuzz.site" class="btn btn-ghost">Email Us</a>
+          </div>
+        </form>
+
+        <aside>
+          <h3>Get in touch</h3>
+          <p>Email: <a href="mailto:hello@campusbuzz.site">hello@campusbuzz.site</a></p>
+          <p>Follow us:</p>
+          <div class="social">
+            <a href="#" aria-label="Twitter">T</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>CampusBuzz</h4>
+        <p>©️ CampusBuzz 2025. Built with ❤️ using HTML, CSS, JS.</p>
+      </div>
+      <nav aria-label="Quick links">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:hello@campusbuzz.site">hello@campusbuzz.site</a></p>
+        <div class="social">
+          <a href="#" aria-label="Twitter">T</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
